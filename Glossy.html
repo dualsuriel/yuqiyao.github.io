@@ -216,48 +216,36 @@ Emergency sound outside.
 	(replace: ?amount)[$counter]
 ]</tw-passagedata><tw-passagedata pid="28" name="Walking" tags="walking" position="276.33333333333337,21.66666666666663" size="100,100">So dark...
 Finally you saw something. 
-[[Walk closer-&gt;Dream]]
-[[Go away-&gt;1]]</tw-passagedata><tw-passagedata pid="29" name="1" tags="1" position="283.3333333333334,214.16666666666663" size="100,100">(set: $counter to 2)
+[[Walk closer-&gt;1]]
+</tw-passagedata><tw-passagedata pid="29" name="1" tags="1" position="283.3333333333334,214.16666666666663" size="100,100">(set: $counter to 1)
 
 (live: 1s)[
 	(set: $counter to it - 1)
-	(if: $counter is 0)[(go-to: &quot;2&quot;)]
+	(if: $counter is 0)[(go-to: &quot;3&quot;)]
 	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="30" name="7" tags="7" position="961.6666666666667,222.5" size="100,100">(set: $counter to 2)
-
-(live: 1s)[
-	(set: $counter to it - 1)
-	(if: $counter is 0)[(go-to: &quot;1&quot;)]
-	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="31" name="6" tags="6" position="851.6666666666667,224.16666666666669" size="100,100">(set: $counter to 2)
+]</tw-passagedata><tw-passagedata pid="30" name="7" tags="7" position="910.0000000000001,210.83333333333337" size="100,100">[[Run!-&gt;Dream]]</tw-passagedata><tw-passagedata pid="31" name="6" tags="6" position="773.3333333333334,222.5" size="100,100">(set: $counter to 2)
 
 (live: 1s)[
 	(set: $counter to it - 1)
 	(if: $counter is 0)[(go-to: &quot;7&quot;)]
 	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="32" name="5" tags="" position="741.6666666666667,222.5" size="100,100">(set: $counter to 2)
+]</tw-passagedata><tw-passagedata pid="32" name="5" tags="" position="658.3333333333334,224.16666666666666" size="100,100">(set: $counter to 2)
 
 (live: 1s)[
 	(set: $counter to it - 1)
 	(if: $counter is 0)[(go-to: &quot;6&quot;)]
 	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="33" name="4" tags="4" position="631.6666666666667,222.5" size="100,100">(set: $counter to 2)
+]</tw-passagedata><tw-passagedata pid="33" name="4" tags="4" position="541.6666666666667,222.5" size="100,100">(set: $counter to 2)
 
 (live: 1s)[
 	(set: $counter to it - 1)
 	(if: $counter is 0)[(go-to: &quot;5&quot;)]
 	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="34" name="3" tags="3" position="521.6666666666667,222.5" size="100,100">(set: $counter to 2)
+]</tw-passagedata><tw-passagedata pid="34" name="3" tags="3" position="410.00000000000006,215.83333333333334" size="100,100">(set: $counter to 1)
 
 (live: 1s)[
 	(set: $counter to it - 1)
 	(if: $counter is 0)[(go-to: &quot;4&quot;)]
-	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="35" name="2" tags="2" position="410.00000000000017,222.5" size="100,100">(set: $counter to 2)
-
-(live: 1s)[
-	(set: $counter to it - 1)
-	(if: $counter is 0)[(go-to: &quot;3&quot;)]
 	(replace: ?amount)[$counter]
 ]</tw-passagedata></tw-storydata>
 
