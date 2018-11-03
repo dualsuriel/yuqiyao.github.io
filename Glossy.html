@@ -66,24 +66,6 @@ tw-story[tags~="4"] {
   	background-size: cover;
   	background-position: center;
 }
-tw-story[tags~="5"] {
-	background-image: url("https://yuqiyao.com/mouth5.png");
-  	background-repeat: no-repeat;
-  	background-size: cover;
-  	background-position: center;
-}
-tw-story[tags~="6"] {
-	background-image: url("https://yuqiyao.com/mouth6.png");
-  	background-repeat: no-repeat;
-  	background-size: cover;
-  	background-position: center;
-}
-tw-story[tags~="7"] {
-	background-image: url("https://yuqiyao.com/mouth7.png");
-  	background-repeat: no-repeat;
-  	background-size: cover;
-  	background-position: center;
-}
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 </script><tw-tag name="walking" color="gray"></tw-tag><tw-passagedata pid="1" name="Start" tags="title" position="24,10.333333333333334" size="100,100">(set: $counter to 2)
@@ -96,12 +78,14 @@ tw-story[tags~="7"] {
 
 
 
-</tw-passagedata><tw-passagedata pid="2" name="Dream2" tags="dream2" position="533.3333333333333,3.9999999999999982" size="100,100">They are melting down!
+</tw-passagedata><tw-passagedata pid="2" name="Dream2" tags="dream2" position="868.3333333333333,27.33333333333337" size="100,100">They are melting down!
 [[Run away--&gt;nightmare]]
-</tw-passagedata><tw-passagedata pid="3" name="wakeup" tags="" position="1109,13.333333333333334" size="100,100">Awaken by alarm [[get up and rush to school--&gt;Downstairs]]
-&lt;/style&gt;
-&lt;img src=https://i3.silvergames.com/p/b/wake-up-simulator.png&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="Glossy Spray" tags="" position="80.33333333333331,211" size="100,100">Product Poster/Introduction
+</tw-passagedata><tw-passagedata pid="3" name="wakeup" tags="" position="1130.6666666666667,13.333333333333334" size="100,100">...It was just a weird dream.
+!
+It&#39;s already 8:30pm, 20 minutes before your Politics class starts. 
+[[get up and rush to school--&gt;Downstairs]]
+&lt;iframe width=&quot;0&quot; height=&quot;0&quot; src=&quot;https://www.youtube.com/watch?v=sj3Ayb5yjxY?autoplay=1&quot;&gt;&lt;/iframe&gt; 
+</tw-passagedata><tw-passagedata pid="4" name="Glossy Spray" tags="" position="80.33333333333331,211" size="100,100">Product Poster/Introduction
 &lt;/style&gt;
 &lt;img src=https://yuqiyao.com/glossyspray.png&gt;
 &lt;/div&gt;
@@ -175,7 +159,7 @@ No, Amy is no the only one, Mrs. Lew stays in front of the door. Smiling as usua
 I am falling into sleep...
 [[Reality--&gt;Second Dream Variation]]</tw-passagedata><tw-passagedata pid="16" name="leave classroom" tags="" position="1644.6666666666667,148.33333333333334" size="100,100">I looked down to my toes. 
 [[Back to classroom--&gt;Amy&#39;s gone]]</tw-passagedata><tw-passagedata pid="17" name="Low EI" tags="" position="2004.6666666666667,543.3333333333334" size="100,100">Walk to the gate
-[[Walk faster--&gt;clinic]]</tw-passagedata><tw-passagedata pid="18" name="nightmare" tags="demo" position="1001.6666666666667,21.333333333333332" size="100,100">[[Take shield off--&gt;wakeup]]</tw-passagedata><tw-passagedata pid="19" name="Amy&#39;s gone" tags="" position="1635.6666666666667,295" size="100,100">Amy is gone.
+[[Walk faster--&gt;clinic]]</tw-passagedata><tw-passagedata pid="18" name="nightmare" tags="demo" position="983.3333333333334,19.666666666666664" size="100,100">[[Take shield off--&gt;wakeup]]</tw-passagedata><tw-passagedata pid="19" name="Amy&#39;s gone" tags="" position="1635.6666666666667,295" size="100,100">Amy is gone.
 [[Go home--&gt;Memory with Amy]]</tw-passagedata><tw-passagedata pid="20" name="Go home" tags="" position="2029.6666666666667,375.3333333333333" size="100,100">
 &quot;I ordered some glossy.&quot; Dad came back home early today.
 Dad asks about EI.
@@ -200,52 +184,38 @@ Emergency sound outside.
 
 &lt;iframe width=&quot;0&quot; height=&quot;0&quot; src=&quot;https://www.youtube.com/embed/0HbBqvg3t0s?autoplay=1&quot;&gt;&lt;/iframe&gt; 
 
-</tw-passagedata><tw-passagedata pid="26" name="Dream" tags="dream" position="401.66666666666663,20.666666666666668" size="100,100">(set: $counter to 2)
-
-(live: 1s)[
-	(set: $counter to it - 1)
-	(if: $counter is 0)[(go-to: &quot;Dream2&quot;)]
-	(replace: ?amount)[$counter]
-]
-
-</tw-passagedata><tw-passagedata pid="27" name="Darkness" tags="" position="146.66666666666666,9.999999999999972" size="100,100">(set: $counter to 2)
+</tw-passagedata><tw-passagedata pid="26" name="Darkness" tags="" position="146.66666666666666,9.999999999999972" size="100,100">(set: $counter to 2)
 
 (live: 1s)[
 	(set: $counter to it - 1)
 	(if: $counter is 0)[(go-to: &quot;Walking&quot;)]
 	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="28" name="Walking" tags="walking" position="276.33333333333337,21.66666666666663" size="100,100">So dark...
+]</tw-passagedata><tw-passagedata pid="27" name="Walking" tags="walking" position="276.33333333333337,21.66666666666663" size="100,100">So dark...
 Finally you saw something. 
 [[Walk closer-&gt;1]]
-</tw-passagedata><tw-passagedata pid="29" name="1" tags="1" position="283.3333333333334,214.16666666666663" size="100,100">(set: $counter to 1)
+</tw-passagedata><tw-passagedata pid="28" name="1" tags="1" position="411.66666666666674,15.833333333333343" size="100,100">(set: $counter to 1)
 
 (live: 1s)[
 	(set: $counter to it - 1)
-	(if: $counter is 0)[(go-to: &quot;3&quot;)]
+	(if: $counter is 0)[(go-to: &quot;2&quot;)]
 	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="30" name="7" tags="7" position="910.0000000000001,210.83333333333337" size="100,100">[[Run!-&gt;Dream]]</tw-passagedata><tw-passagedata pid="31" name="6" tags="6" position="773.3333333333334,222.5" size="100,100">(set: $counter to 2)
+]</tw-passagedata><tw-passagedata pid="29" name="4" tags="4" position="755,24.166666666666647" size="100,100">(set: $counter to 2)
 
 (live: 1s)[
 	(set: $counter to it - 1)
-	(if: $counter is 0)[(go-to: &quot;7&quot;)]
+	(if: $counter is 0)[(go-to: &quot;Dream2&quot;)]
 	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="32" name="5" tags="" position="658.3333333333334,224.16666666666666" size="100,100">(set: $counter to 2)
-
-(live: 1s)[
-	(set: $counter to it - 1)
-	(if: $counter is 0)[(go-to: &quot;6&quot;)]
-	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="33" name="4" tags="4" position="541.6666666666667,222.5" size="100,100">(set: $counter to 2)
-
-(live: 1s)[
-	(set: $counter to it - 1)
-	(if: $counter is 0)[(go-to: &quot;5&quot;)]
-	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="34" name="3" tags="3" position="410.00000000000006,215.83333333333334" size="100,100">(set: $counter to 1)
+]</tw-passagedata><tw-passagedata pid="30" name="3" tags="3" position="645.0000000000001,20.833333333333332" size="100,100">(set: $counter to 1)
 
 (live: 1s)[
 	(set: $counter to it - 1)
 	(if: $counter is 0)[(go-to: &quot;4&quot;)]
+	(replace: ?amount)[$counter]
+]</tw-passagedata><tw-passagedata pid="31" name="2" tags="2" position="526.6666666666667,15.833333333333343" size="100,100">(set: $counter to 1)
+
+(live: 1s)[
+	(set: $counter to it - 1)
+	(if: $counter is 0)[(go-to: &quot;3&quot;)]
 	(replace: ?amount)[$counter]
 ]</tw-passagedata></tw-storydata>
 
