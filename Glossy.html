@@ -17,6 +17,9 @@
     transition: width 2s;
   	background-position: center;
    }
+tw-story[tags~="intro"] {
+
+   }
 tw-story[tags~="dream"] {
 	background-image: url("https://yuqiyao.com/dream.png");
   	background-repeat: no-repeat;
@@ -77,37 +80,40 @@ tw-story[tags~="4"] {
 
 (live: 1s)[
 	(set: $counter to it - 1)
-	(if: $counter is 0)[(go-to: &quot;Darkness&quot;)]
+	(if: $counter is 0)[(go-to: &quot;Game intro&quot;)]
 	(replace: ?amount)[$counter]
 ]
 
 
 
 </tw-passagedata><tw-passagedata pid="2" name="Dream2" tags="dream2" position="868.3333333333333,27.33333333333337" size="100,100">They are melting down!
-[[You want to get out of here--&gt;wakeup]]
+[[You run away--&gt;wakeup]]
 </tw-passagedata><tw-passagedata pid="3" name="wakeup" tags="" position="1059,13.333333333333334" size="100,100">...It was just a weird dream. 
 !!!What time is it now?
 
 8:30! You have to go. Class starts at 9am.
-[[Turn off the alarm and rush downstairts-&gt;Downstairs]]</tw-passagedata><tw-passagedata pid="4" name="Glossy Spray" tags="" position="80.33333333333331,211" size="100,100">Product Poster/Introduction
+[[Turn off the alarm and rush downstairts-&gt;Downstairs]]</tw-passagedata><tw-passagedata pid="4" name="Glossy Spray" tags="" position="30.333333333333314,561" size="100,100">Product Poster/Introduction
 &lt;/style&gt;
 &lt;img src=https://yuqiyao.com/glossyspray.png&gt;
 &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="5" name="Street" tags="" position="2218.3333333333335,418.33333333333326" size="100,100">Everyone on the street seems so carefree.
-But who knows what the real expressions underneath.
-[[You quicken your pace Go home--&gt;Go home]] 
+</tw-passagedata><tw-passagedata pid="5" name="Street" tags="" position="2198.3333333333335,361.6666666666666" size="100,100">Everyone on the street seems so carefree.
+But who knows what the real emotions are underneath.
+[[You quicken your pace on the way home--&gt;Go home]] 
 &lt;/style&gt;
 &lt;img src=https://yuqiyao.com/street.png&gt;
 &lt;/div&gt;
 </tw-passagedata><tw-passagedata pid="6" name="School Gate" tags="" position="1375.6666666666667,0" size="100,100">The front gate of school is about 100 meters away. 
 
 You slow down and start walking.  
-&quot;For the sake of the Emotional Index (EI)&quot;, you whisper and stare at the digital board hangging next to the gate. 
+&quot;For the sake of the [[Emotional Index-&gt;Emotional Index]]&quot;, you whisper and stare at the digital monitor hangging next to the gate. 
 Heart beat probably wouldn&#39;t affect your EI, but who knows. 
+&lt;/style&gt;
+&lt;img src=https://yuqiyao.com/monitor.jpg&gt;
+&lt;/div&gt;
+0.90, seems fine. 
+You [[enter the gate and walk to the classroom-&gt;classroom]].
 
-You [[Walk to the classroom--&gt;classroom]].
-
-</tw-passagedata><tw-passagedata pid="7" name="Emergency on Amy" tags="" position="1693.3333333333335,7.666666666666667" size="100,100">&quot;...I&#39;m fine.&quot; Amy turns her head away.
+</tw-passagedata><tw-passagedata pid="7" name="Emergency on Amy" tags="" position="1693.3333333333335,6" size="100,100">&quot;...I&#39;m fine.&quot; Amy turns her head away.
 &quot;You sure you&#39;re okay?&quot; You ask again.
 &quot;...Not really.&quot;
 &quot;Wanna talk about it?&quot; 
@@ -119,16 +125,16 @@ Amy scribbled on her notebook: &quot;It has been 5 days...My EI hits below 0.6.&
 &quot;...how?&quot; You asked. For some reason your voice is so low that you are not even sure if Amy hears you. 
 Amy stares at you silently. 
 
-[[You are not sure what to say.--&gt;They are coming]]
-[[You pat on Amy&#39;s shoulder.--&gt;They are coming]]
+[[You are not sure what to say.-&gt;They are coming]]
+[[You pat on Amy&#39;s shoulder.-&gt;They are coming]]
  
 
 
-</tw-passagedata><tw-passagedata pid="8" name="Memory with Amy" tags="" position="2053.3333333333335,378.33333333333326" size="100,100">After school you walk on the street. You miss the time when you walk with Amy on this street.
-[[You are still here but Amy is taken somewhere.-&gt;Street]]
+</tw-passagedata><tw-passagedata pid="8" name="Memory with Amy" tags="" position="2053.3333333333335,378.33333333333326" size="100,100">After school, for the first time you walk alone on the street, without Amy. You miss the time you had with Amy on this street.
+[[You are still here but Amy is not here anymore.-&gt;Street]]
 &lt;/style&gt;
 &lt;img src=https://yuqiyao.com/oldtime.png&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="Doctor" tags="" position="1981.3333333333335,730" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="10" name="Downstairs" tags="" position="1219,22.33333333333333" size="100,100">First floor, living room.
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="Doctor" tags="" position="2053,815" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="10" name="Downstairs" tags="" position="1219,22.33333333333333" size="100,100">First floor, living room.
 
 Dad is still watching TV... 
 He would never miss any episode of //Great Mind, Great Soul//, though the content is about the same every day. 
@@ -138,36 +144,36 @@ Mrs. Lew asks you to go to your seat, then leaves the classroom. You guess she i
 
 &quot;You are not in the mood of studying.&quot; While waiting for Mrs. Lew coming back, you turned to Amy, your best friend. 
 Amy is very pale today. Look at these dark circles... 
-[[You asked Amy if she is doing okay.--&gt;Emergency on Amy]]
+[[You ask Amy if she is doing okay.--&gt;Emergency on Amy]]
 [[You keep silence and decide to check on Amy later.-&gt;Ask to leave]]
-</tw-passagedata><tw-passagedata pid="12" name="Mountain Top" tags="" position="492.66666666666646,1066.3333333333333" size="100,100">You heard a sound from the back. 
+</tw-passagedata><tw-passagedata pid="12" name="Mountain Top" tags="" position="224.3333333333331,1036.3333333333333" size="100,100">You heard a sound from the back. 
 -Amy shows up
 Look at each other, smile, and look to the world that you have never been to. 
 -
 [[End--&gt;Cast]]
-</tw-passagedata><tw-passagedata pid="13" name="Cast" tags="" position="366.66666666666646,1179.6666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="14" name="They are coming" tags="" position="1858.3333333333333,13.333333333333334" size="100,100">Wait, Amy is not stairing at you. She is stairing the door behind you. 
+</tw-passagedata><tw-passagedata pid="13" name="Cast" tags="" position="98.33333333333309,1149.6666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="14" name="They are coming" tags="" position="1858.3333333333333,13.333333333333334" size="100,100">Wait, Amy is not stairing at you. She is stairing the door behind you. 
 &quot;They are coming.&quot; Amy mumbled. 
 
 [[You glance at the door-&gt;They are coming for Amy]]
 
  
-</tw-passagedata><tw-passagedata pid="15" name="I am not leaving" tags="" position="1998.3333333333335,141.66666666666669" size="100,100">&quot;Amy!&quot; You do not know where 009 and Mrs. Lew are taking Amy to, but you cannot just let them go. 
+</tw-passagedata><tw-passagedata pid="15" name="I am not leaving" tags="" position="2016.6666666666667,136.66666666666669" size="100,100">&quot;Amy!&quot; You do not know where 009 and Mrs. Lew are taking Amy to, but you cannot just let them go. 
 
 009 pushes a putton on his wrist. 
 A light blue mist arises in the classroom.
 You run forward, then fall to the ground. Desperately.
-[[Amy...that&#39;s your last word before losing consciousness.-&gt;Second Dream Variation]]</tw-passagedata><tw-passagedata pid="16" name="leave classroom" tags="" position="1779.6666666666667,298.3333333333333" size="100,100">You look down to your toes. 
+[[Amy...that&#39;s your last word before losing consciousness.-&gt;Second Dream Variation]]</tw-passagedata><tw-passagedata pid="16" name="leave classroom" tags="" position="1871.3333333333333,274.99999999999994" size="100,100">You look down to your toes. 
 
-[[You grab your notebook and head to the training session.-&gt;Amy&#39;s gone]]</tw-passagedata><tw-passagedata pid="17" name="Low EI" tags="" position="2448,428.3333333333334" size="100,100">Walk to the gate
-[[Walk faster--&gt;clinic]]</tw-passagedata><tw-passagedata pid="18" name="Amy&#39;s gone" tags="" position="1915.6666666666667,323.33333333333337" size="100,100">Amy is gone.
+[[You grab your notebook and head to the training session.-&gt;Amy&#39;s gone]]</tw-passagedata><tw-passagedata pid="17" name="Low EI" tags="" position="2448,430.0000000000001" size="100,100">Walk to the gate
+[[Walk faster--&gt;clinic]]</tw-passagedata><tw-passagedata pid="18" name="Amy&#39;s gone" tags="" position="1935.6666666666667,421.66666666666674" size="100,100">Amy is gone.
 
 Her backpack is gone, her name is removed from the digital display wall, the cat stickers on her desk are all scrubbed off. 
 
-You come back to the classroom realizing that Amy is gone, [[like she never exists.-&gt;Memory with Amy]]</tw-passagedata><tw-passagedata pid="19" name="Go home" tags="" position="2019.666666666667,575.3333333333333" size="100,100">
+You come back to the classroom realizing that Amy is gone, [[like she never exists.-&gt;Memory with Amy]]</tw-passagedata><tw-passagedata pid="19" name="Go home" tags="" position="2301.3333333333335,481.9999999999999" size="100,100">
 &quot;I ordered some glossy.&quot; Dad came back home early today.
 Dad asks about EI.
 -ignorance of real problem
-[[Lay on bed--&gt;Second Dream]]</tw-passagedata><tw-passagedata pid="20" name="Second Dream" tags="" position="2206.3333333333335,573.3333333333333" size="100,100">Amy crying.
+[[Lay on bed--&gt;Second Dream]]</tw-passagedata><tw-passagedata pid="20" name="Second Dream" tags="" position="2284.666666666667,654.9999999999999" size="100,100">Amy crying.
 [[Reality--&gt;Wake up]]</tw-passagedata><tw-passagedata pid="21" name="Second Dream Variation" tags="" position="2173.0000000000005,189.33333333333337" size="100,100">-Image for dream
 [[Wake up--&gt;Wake up variation]]</tw-passagedata><tw-passagedata pid="22" name="Wake up variation" tags="clinic" position="2321.333333333334,250.33333333333331" size="100,100">You wake up in the pure white castle. On a white bed with white linens. 
 It takes five seconds to figure out where you are at - the Clinic. 
@@ -176,17 +182,17 @@ It takes five seconds to figure out where you are at - the Clinic.
 
 </tw-passagedata><tw-passagedata pid="23" name="Wake up" tags="" position="2358,841.6666666666667" size="100,100">[[Reality--&gt;Low EI]]</tw-passagedata><tw-passagedata pid="24" name="clinic" tags="" position="2465,1145" size="100,100">Your dad scheduled you an appointment
 
-
 &lt;iframe width=&quot;0&quot; height=&quot;0&quot; src=&quot;https://www.youtube.com/embed/0HbBqvg3t0s?autoplay=1&quot;&gt;&lt;/iframe&gt; 
 
-</tw-passagedata><tw-passagedata pid="25" name="Darkness" tags="" position="146.66666666666666,9.999999999999972" size="100,100">(set: $counter to 2)
+</tw-passagedata><tw-passagedata pid="25" name="Darkness" tags="" position="146.66666666666666,9.999999999999972" size="100,100">(set: $counter to 1)
 
 (live: 1s)[
 	(set: $counter to it - 1)
 	(if: $counter is 0)[(go-to: &quot;Walking&quot;)]
 	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="26" name="Walking" tags="walking" position="276.33333333333337,21.66666666666663" size="100,100">...You are walking in darkness, alone. 
-You don&#39;t know where the road ends, but just keep walking. 
+]
+</tw-passagedata><tw-passagedata pid="26" name="Walking" tags="walking" position="276.33333333333337,21.66666666666663" size="100,100">You are walking in darkness. 
+No idea where you are heading to, but just keep walking. 
 Finally, you saw something in a distance.
 
 [[What is it? You walk closer-&gt;1]]
@@ -215,16 +221,18 @@ Finally, you saw something in a distance.
 	(set: $counter to it - 1)
 	(if: $counter is 0)[(go-to: &quot;3&quot;)]
 	(replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="31" name="They are coming for Amy" tags="" position="2001.666666666667,5.000000000000002" size="100,100">The door is open. Mrs. Lew steps into the classroom, with her lesson plan in hand as well as her beautiful smile, like always.
+]</tw-passagedata><tw-passagedata pid="31" name="They are coming for Amy" tags="" position="2018.3333333333337,6.666666666666669" size="100,100">The door is open. Mrs. Lew steps into the classroom, with her lesson plan in hand as well as her beautiful smile, like always.
 Amy is still looking at the door, like a frozen doll. 
 &quot;Amy you scared me!&quot; I wave in front of her.  
 &quot;You&#39;d better take your homework out.&quot; I take the homework out of my backpack.
 
 Tip tap.
 [[You hear footstep from behind.-&gt;Ask to leave]] 
-</tw-passagedata><tw-passagedata pid="32" name="Ask to leave" tags="" position="1796.666666666667,150" size="100,100">Class is going to start in two minutes. 
+</tw-passagedata><tw-passagedata pid="32" name="Ask to leave" tags="" position="1836.666666666667,145" size="100,100">Class is going to start in two minutes. 
 &quot;We have a special training at the VR game room today. oo9 will show you how to get there.&quot; Mrs. Lew made a quick announcement. Robot 009 is standing behind her.
-
+&lt;/style&gt;
+&lt;img src=https://yuqiyao.com/tcrobot.jpg&gt;
+&lt;/div&gt;
 &quot;Amy is not feeling well today. We are here to help.&quot;
 
 &quot;Can I stay with Amy?&quot; You are concerned about Amy.
@@ -232,7 +240,22 @@ Tip tap.
 
 [[&quot;I am not leaving!&quot;--&gt;I am not leaving]]
 [[&quot;...Okay. Call me later, Amy!&quot;--&gt;leave classroom]]
- </tw-passagedata></tw-storydata>
+ </tw-passagedata><tw-passagedata pid="33" name="Emotional Index (EI)" tags="" position="29.166666666666657,331.66666666666663" size="100,100">Emotional Index (EI) is an index indicating emotional wellness and stability. 
+
+The National EI is a steady 0.9 out of 1.
+Good luck to those who are far below the National EI.</tw-passagedata><tw-passagedata pid="34" name="Watch" tags="" position="27.5,450" size="100,100"></tw-passagedata><tw-passagedata pid="35" name="Game intro" tags="intro" position="179.16666666666669,150" size="100,100">You will be asked to make a series of choices throughout the game.
+
+The game contains music, please wear headphone if you can.
+
+[[Okay-&gt;Darkness]]
+
+</tw-passagedata><tw-passagedata pid="36" name="Emotional Index" tags="" position="1374,150" size="100,100">Emotional Index (EI) is an index indicating emotional wellness and stability. People with high EI are highly valued in the society. 
+
+The National EI is a steady 0.9 out of 1.
+[[Back-&gt;School Gate]]</tw-passagedata><tw-passagedata pid="37" name="Home (Bye dad)" tags="" position="372.5,891.6666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="38" name="Amy&#39;s house" tags="" position="2177.5,498.33333333333337" size="100,100">Amy&#39;s dad rejects.
+Amy&#39;s mom lobotomy.</tw-passagedata><tw-passagedata pid="39" name="Save Amy" tags="" position="1582.5,743.3333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="40" name="Escape" tags="" position="1654.1666666666667,868.3333333333335" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="41" name="Emergency protocol" tags="" position="1222.5,610" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="42" name="Contact" tags="" position="1005.8333333333334,651.6666666666666" size="100,100">People message.
+No one to ask for help.
+Ask dad?</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
