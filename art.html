@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Yuqi Yao - Spatial Reasoning Platform</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/mainstyle.css">
+		<!-- navbar -->
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="font-family:'Montserrat', sans-serif;font-size: 14px;
+    font-weight: 500;line-height: 1;letter-spacing: 0.05em;text-transform: uppercase; padding: 13px;">
+  		<a class="navbar-brand" href="#">YY</a>
+			<div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarText">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="about.html">About</a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link" href="index.html#wsite-content">Projects</a>
+		      </li>
+					<li class="nav-item">
+		        <a class="nav-link" href="art.html">Art</a>
+		      </li>
+					<li class="nav-item">
+		        <a class="nav-link" href="contact.html">Contact</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+	</head>
+
+	<body style="background-color:white; padding-top: 0px;">
+		<!-- background-color:#1c2a2f -->
+		<div class="wrapper" style="margin-top: 0px;">
+	<div style="height:auto;position:relative; left:0;top:0;background-color:white;">
+		<div class="container center" style="padding-top:100px;padding-bottom:0px;">
+					<h2 style="font-family: 'Montserrat', sans-serif; font-size: 64px;font-weight: 700;line-height: 1;text-transform: uppercase;letter-spacing: 0.035em;">ART</h2>
+					<p>Jewelry | Installation | Drawing
+		</div>
+	</div>
+	</div>
+<!-- Content -->
+	<div class="portfoliocontainer">
+		<div class="row">
+			<div class="col-md-3"> </div>
+			<div class="col-md-2">
+				<div class="wrap">
+					<div class="workcontainer">
+						<a href="growingup.html">
+						  <img src="images/tag1.jpg" alt="Jewelry - Growing Up" class="image" width="100%">
+						  <div class="overlay">
+						    <div class="text">Examine parent-child relationship and adolescent depression</div>
+						  </div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="wrap">
+					<div class="workcontainer">
+					  <img src="images/tag6.jpg" alt="platform" class="image" width="100%">
+					  <div class="overlay">
+					    <div class="text">Digital photo collage</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="wrap">
+					<div class="workcontainer">
+						<img src="images/tag3.jpg" alt="platform" class="image" width="100%">
+						<div class="overlay">
+							<div class="text">An installation reflecting on a whale photo</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3"> </div>
+		</div>
+	<div class="row" style="margin-top: 20px;">
+		<div class="col-md-3"> </div>
+		<div class="col-md-2"></div>
+		<div class="col-md-2">
+			<div class="wrap">
+				<div class="workcontainer">
+					<img src="images/tag4.jpg" alt="platform" class="image" width="100%">
+					<div class="overlay">
+						<div class="text">Illustrations and drawings</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	</div>
+ <!-- /content -->
+
+<!-- footer -->
+<div class="footer" style="cursor: pointer;" onclick="window.location='';">
+	<div class="" style="width: 100%; height:100px;">
+		<!-- background-color: #1c2a2f; -->
+		<div style="position:relative;padding:40px;">Copyright © 2019 Yuqi Yao. All Rights Reserved.</div>
+	</div>
+
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	</body>
+</html>
+<script>
+ // modal from http://jsfiddle.net/5b01x6g2/2/
+$(document).ready(function () {
+		$('#myModal').on('show.bs.modal', function (e) {
+				var image = $(e.relatedTarget).attr('src');
+				$(".img-responsive").attr("src", image);
+		});
+});
+</script>
