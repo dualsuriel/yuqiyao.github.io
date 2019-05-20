@@ -9,6 +9,37 @@
     margin: 0 auto;
 }
 
+/* parallax */
+.parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* end of parallax */
+
+.indexnav {
+  color:white !important;
+}
+
+.indexnav.scrolled {
+  color:black !important;
+}
+
+/* nav bar style changes after scrolling */
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  color: black !important;
+  transition: background-color 200ms linear;
+}
+
 .fab, .far {
   font-size: 30px;
 }
@@ -93,6 +124,10 @@ button:hover {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
+
+/* nav bar on index page */
+
+
 /*nav bar*/
 
 .navbar-light .navbar-nav .nav-link {
@@ -105,7 +140,7 @@ button:hover {
 }
 
 .bg-light {
-    background-color: white!important;
+    background-color: white !important;
 }
 
 .center {
@@ -139,6 +174,16 @@ button:hover {
     text-align: center;
     margin-top: 40px;
 }
+/* footer {
+    font-size: 13px;
+    position
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: gray;
+    text-align: center;
+    margin-top: 40px;
+} */
 h4 {
   font-family:'Montserrat', sans-serif;
 }
