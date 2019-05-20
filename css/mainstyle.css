@@ -9,6 +9,7 @@
     margin: 0 auto;
 }
 
+
 /* parallax */
 .parallax {
   /* The image used */
@@ -25,23 +26,55 @@
 }
 /* end of parallax */
 
-.indexnav {
-  color:white !important;
-}
 
-.indexnav.scrolled {
+/* color of text in the nav bar changes after scrolling the page */
+/* .indexnav.scrolled {
   color:black !important;
 }
 
 navbar-toggler {
   background-color: white;
+} */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .navbar-brand {
+    color: black;
+  }
+  .navbar-fixed-top {
+    background-color: #fff !important;
+    color: black !important;
+    transition: background-color 200ms linear;
+  }
 }
-/* nav bar style changes after scrolling */
-.navbar-fixed-top.scrolled {
-  background-color: #fff !important;
-  color: black !important;
-  transition: background-color 200ms linear;
+
+/* Medium devices (landscape tablets, 768px and up), such as 15 inch laptop*/
+@media only screen and (min-width: 768px) {
+  .i-brand {
+    color: white !important;
+  }
+  /* color of the nav links on the right before scrolling  */
+  .indexnav {
+    color:white !important;
+  }
+  /* nav bar style changes after scrolling */
+  .i-brand.scrolled {
+    color: black !important;
+  }
+  .navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    color: black !important;
+    transition: background-color 200ms linear;
+  }
+  /* color of text in the nav bar changes after scrolling the page */
+  .indexnav.scrolled {
+    color:black !important;
+  }
+
+  navbar-toggler {
+    background-color: white;
+  }
 }
+
 
 .fab, .far {
   font-size: 30px;
