@@ -37,14 +37,17 @@ navbar-toggler {
 } */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  nav-bar {
+    background-color: white;
+  }
   .navbar-brand {
     color: black;
   }
-  .navbar-fixed-top {
+  /* .navbar-fixed-top {
     background-color: #fff !important;
     color: black !important;
     transition: background-color 200ms linear;
-  }
+  } */
 }
 
 /* Medium devices (landscape tablets, 768px and up), such as 15 inch laptop*/
