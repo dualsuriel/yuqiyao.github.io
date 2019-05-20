@@ -8,6 +8,42 @@
     width: 100%;
     margin: 0 auto;
 }
+
+.fab, .far {
+  font-size: 30px;
+}
+
+.rectangle {
+    width: 200px;
+    height: 100px;
+    background: orange;
+    padding:20px;
+  }
+
+.circle {
+    color: white;
+    border-color:#E8A15B;
+    background: #E8A15B;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+button:hover {
+    color: #4444AD;
+    border-color:#E5865C;
+    background-color: #E5865C;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* a.button:hover {
+  color: #4444AD;
+  background-color: #E5865C;
+  text-decoration: none;
+} */
+
 .portfoliocontainer {
   /*width:100%;*/
   margin-top: 80px;
