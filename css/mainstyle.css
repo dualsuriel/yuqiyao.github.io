@@ -98,9 +98,11 @@ navbar-toggler {
     height: 100px;
     padding: 10px;
     border-radius: 50%;
+    -webkit-transition: width .5s; /* For Safari 3.1 to 6.0 */
+    transition: width .5s;
   }
-
-button:hover {
+.circle:hover{
+    width:150px;
     color: #4444AD;
     border-color:#E5865C;
     background-color: #E5865C;
