@@ -36,6 +36,21 @@ navbar-toggler {
   background-color: white;
 } */
 /* Extra small devices (phones, 600px and down) */
+
+
+/* ddddd */
+.nav-link:hover {
+  background-color: #F9E421;
+  opacity: 0.9;
+  color: gray!important;
+  transition: 0.5s;
+}
+
+.active {
+  background-color: #F9E421;
+}
+
+
 @media only screen and (max-width: 600px) {
   nav-bar {
     background-color: white;
