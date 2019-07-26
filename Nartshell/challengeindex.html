@@ -70,14 +70,35 @@
 		</div>
 		<button type="button" class="btn btn-warning" style="font-size: 20px;">I'M READY</button>
 	</div>
-
+  <div class="unitywrapper" style="position: relative">
     <div class="webgl-content">
-      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div id="unityContainer" style="width: 960px; height: 600px；"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
         <div class="title">Nartshell</div>
       </div>
     </div>
+  </div>
+
   </body>
 </html>
+<script>
+// card flipping effect from http://jsfiddle.net/9gPfz/2/
+$(function(){
+		$('.equipment-card').click(function(){
+				$(this).toggleClass('flipped');
+
+		});
+
+
+});
+
+ // modal from http://jsfiddle.net/5b01x6g2/2/
+$(document).ready(function () {
+		$('#myModal').on('show.bs.modal', function (e) {
+				var image = $(e.relatedTarget).attr('src');
+				$(".img-responsive").attr("src", image);
+		});
+});
+</script>
