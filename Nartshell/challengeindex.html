@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Nartshell</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <!-- <script src="Build/UnityLoader.js"></script>
+    css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <link rel="icon" href="images/yuqi.ico" type="image/x-icon">
+    <!-- end of css -->
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/ChallengeBuilt.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="wrapper" style="margin-top: 0px;">
+	<div style="height:auto;position:relative; left:0;top:0;background-color:white;">
+		<div class="container center" style="padding-top:100px;padding-bottom:0px;">
+					<h2 class="" style="font-family: 'Montserrat', sans-serif; font-size: 64px;font-weight: 700;line-height: 1;text-transform: uppercase;letter-spacing: 0.035em;">Challenge</h2>
+					<h4>Time to start the challenge you collected from Andy Warhol！<h4>
+					<p> <span style="color: #d97044">Click the cards </span> to reveal detailed prompts.<p>
+					<p> Hit "I'M READY" when you are ready to start.</p>
+		</div>
+	</div>
+	</div>
+
+<!-- Content -->
+	<div class="portfoliocontainer center">
+		<div class="row">
+			<div class="col-md-3"> </div>
+			<div class='span12'>
+					<div class='equipment-card'>
+							<div class='card-front card-face center'>
+									<h4>Andy Warhol</h4>
+							</div>
+							<div class='card-back card-face'>
+								 <img src="images/tag6.jpg" alt="platform" class="image" width="auto">
+							</div>
+					</div>
+					<div class='equipment-card'>
+					<div class='card-front card-face'>
+									front
+							</div>
+							<div class='card-back card-face'>
+									back
+							</div>
+					</div>
+					<div class='equipment-card'>
+					<div class='card-front card-face'>
+									front
+							</div>
+							<div class='card-back card-face'>
+									back
+							</div>
+					</div>
+					<div class='equipment-card'>
+					<div class='card-front card-face'>
+									front
+							</div>
+							<div class='card-back card-face'>
+									back
+							</div>
+					</div>
+			</div>
+		</div>
+		<button type="button" class="btn btn-warning" style="font-size: 20px;">I'M READY</button>
+	</div>
+
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Nartshell</div>
+      </div>
+    </div>
+  </body>
+</html>
