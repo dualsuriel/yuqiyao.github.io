@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+figure {
+	width: 250px;
+	height: 250px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+
+
+
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+
+}
+
+.frame{
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  /*border: 5px double #55a8d6;*/
+	padding: 5px;
+}
+
+.imgwrap{
+        position:relative;
+        overflow:hidden;
+
+    }
+/* Blur + Gray Scale */
+.hoverimg figure img {
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+
+}
+.hoverimg figure:hover img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+
+}
+.hoverimg figure:hover figcaption {
+	background: rgba(0,0,0,0);
+	color: #fff;
+	display: block;
+	height: 30%;
+	left: 3px;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 85px;
+	text-align: center;
+	z-index: 400;
+	font-size: 18px;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+
+}
+
+.hoverimg figure: figcaption {
+	color: #fff;
+	display: block;
+	height: 100%;
+	left: 30px;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 80px;
+
+	z-index: -100;
+}
+
+.hoverimg figure: figcaption p {
+	display: table-cell;
+	font-size: 2em;
+	position: relative;
+	top: -40px;
+	width: 400px;
+
+	vertical-align: middle;
+}
+
+.hoverimg figure:hover figcaption {
+	opacity: 1;
+}

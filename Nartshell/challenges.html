@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Nartshell - Challenges</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/mainstyle.css">
+		<link rel="icon" href="images/yuqi.ico" type="image/x-icon">
+		<!-- unity -->
+		<link rel="shortcut icon" href="TemplateData/favicon.ico">
+		<link rel="stylesheet" href="TemplateData/style.css">
+		<script src="TemplateData/UnityProgress.js"></script>
+		<script src="Build/UnityLoader.js"></script>
+		<script>
+			var unityInstance = UnityLoader.instantiate("unityContainer", "Build/TestBuild.json", {onProgress: UnityProgress});
+		</script>
+		<!-- navbar -->
+		<nav id="i-nav" class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="font-family:'Montserrat', sans-serif;font-size: 14px;
+    font-weight: 500;line-height: 1;letter-spacing: 0.05em;text-transform: uppercase; padding: 13px;">
+			<a class="i-brand navbar-brand" href="index.html"><img src="images/Nartshell_weblogo.png" style="width:80px; padding-left: 40%;"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarText">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="about.html">About</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="index.html#projects">Projects</a>
+		      </li>
+					<li class="nav-item active">
+		        <a class="nav-link" href="art.html">Art</a>
+		      </li>
+					<li class="nav-item">
+		        <a class="nav-link" href="contact.html">Contact</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+	</head>
+
+	<div class="webgl-content">
+		<div id="unityContainer" style="width: 960px; height: 600px"></div>
+		<div class="footer">
+			<div class="webgl-logo"></div>
+			<div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+			<div class="title">Nartshell</div>
+		</div>
+	</div>
+
+	<body style="background-color:white; padding-top: 0px;">
+		<div class="wrapper" style="margin-top: 0px;">
+	<div style="height:auto;position:relative; left:0;top:0;background-color:white;">
+		<div class="container center" style="padding-top:100px;padding-bottom:0px;">
+					<h2 class="" style="font-family: 'Montserrat', sans-serif; font-size: 64px;font-weight: 700;line-height: 1;text-transform: uppercase;letter-spacing: 0.035em;">Challenge</h2>
+					<h4>Time to start the challenge you collected from Andy Warhol！<h4>
+					<p> <span style="color: #d97044">Click the cards </span> to reveal detailed prompts.<p>
+					<p> Hit "I'M READY" when you are ready to start.</p>
+		</div>
+	</div>
+	</div>
+
+<!-- Content -->
+	<div class="portfoliocontainer center">
+		<div class="row">
+			<div class="col-md-3"> </div>
+			<div class='span12'>
+					<div class='equipment-card'>
+							<div class='card-front card-face center'>
+									<h4>Andy Warhol</h4>
+							</div>
+							<div class='card-back card-face'>
+								 <img src="images/tag6.jpg" alt="platform" class="image" width="auto">
+							</div>
+					</div>
+					<div class='equipment-card'>
+					<div class='card-front card-face'>
+									front
+							</div>
+							<div class='card-back card-face'>
+									back
+							</div>
+					</div>
+					<div class='equipment-card'>
+					<div class='card-front card-face'>
+									front
+							</div>
+							<div class='card-back card-face'>
+									back
+							</div>
+					</div>
+					<div class='equipment-card'>
+					<div class='card-front card-face'>
+									front
+							</div>
+							<div class='card-back card-face'>
+									back
+							</div>
+					</div>
+			</div>
+		</div>
+		<button type="button" class="btn btn-warning" style="font-size: 20px;">I'M READY</button>
+	</div>
+ <!-- /content -->
+<!-- footer -->
+<div class="footer" style="cursor: pointer;" onclick="window.location='';">
+	<div class="" style="width: 100%; height:100px;">
+		<!-- background-color: #1c2a2f; -->
+		<div style="position:relative;padding:40px;">Copyright © 2019 Yuqi Yao. All Rights Reserved.</div>
+	</div>
+
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	</body>
+</html>
+<script>
+// card flipping effect from http://jsfiddle.net/9gPfz/2/
+$(function(){
+		$('.equipment-card').click(function(){
+				$(this).toggleClass('flipped');
+
+		});
+
+
+});
+
+ // modal from http://jsfiddle.net/5b01x6g2/2/
+$(document).ready(function () {
+		$('#myModal').on('show.bs.modal', function (e) {
+				var image = $(e.relatedTarget).attr('src');
+				$(".img-responsive").attr("src", image);
+		});
+});
+</script>
