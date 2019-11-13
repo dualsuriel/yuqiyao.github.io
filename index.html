@@ -110,4 +110,10 @@ var $nav = $(".indexnav");
 $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 });
 });
+
+//bypass parallax on ios devices
+var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+if (ismobile){
+ // bypass parallax effect
+}
 </script>
