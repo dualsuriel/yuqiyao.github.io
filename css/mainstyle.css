@@ -10,22 +10,63 @@
 }
 
 
-/* parallax */
-.parallax {
-  /* The image used */
-  background-image: url("img_parallax.jpg");
-
-  /* Set a specific height */
-  height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* parallax scrolling on the index page*/
+/* On screens that are 300px or more, set the background color to be... */
+@media screen and (min-width: 300px) {
+  .parallax1 {
+    /* The image used */
+    background-color: #DDDDDB;
+    background-image: url("../images/Index_Connect_to_World.png");
+    background-size: 100%;
+    /* Set a specific height */
+    height: 900px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax2 {
+    /* The image used */
+    background-color: #DDDDDB;
+    background-image: url("../images/bg_0.png");
+    background-size: 100%;
+    /* Set a specific height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom:10%;
+    margin-bottom:20px
+  }
 }
 /* end of parallax */
 
+/* On screens that are 300px or less, set the background color to be... */
+@media screen and (max-width: 300px) {
+  .parallax1 {
+    /* The image used */
+    /* background-image: url("img_parallax.jpg"); */
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-color: white;
+  }
+  .parallax2 {
+    /* The image used */
+    /* background-image: url("img_parallax.jpg"); */
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-color: white;
+  }
+}
 
 /* color of text in the nav bar changes after scrolling the page */
 /* .indexnav.scrolled {
@@ -38,7 +79,7 @@ navbar-toggler {
 /* Extra small devices (phones, 600px and down) */
 
 
-/* ddddd */
+/* nav bar */
 .nav-link:hover {
   background-color: #F9E421;
   opacity: 0.9;
