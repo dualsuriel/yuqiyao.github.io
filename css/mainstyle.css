@@ -4,6 +4,12 @@
   margin-top:80px;
 }*/
 
+/* fade in effect */
+/* body {
+    opacity: 0;
+    transition: opacity 2s;
+} */
+
 #content {
     width: 100%;
     margin: 0 auto;

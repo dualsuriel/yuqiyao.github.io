@@ -39,7 +39,7 @@
 
 	</head>
 
-	<body style="background-color:white; padding-top: 0px;">
+	<body style="background-color:white; padding-top: 0px;opacity: 0; transition: opacity 1s;" onload="document.body.style.opacity='1'">
 		<div class="parallax1">
 		<!-- <div class="parallax" style="height: 900px; background-color: #DDDDDB;"> -->
 				<!-- <div style="color: #594D3E;position:relative; left:0;top:0;"> -->
@@ -81,6 +81,7 @@
 	</body>
 </html>
 <script>
+
  // modal from http://jsfiddle.net/5b01x6g2/2/
 $(document).ready(function () {
 		$('#myModal').on('show.bs.modal', function (e) {
@@ -111,5 +112,6 @@ var $nav = $(".indexnav");
 $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 });
 });
+
 
 </script>
