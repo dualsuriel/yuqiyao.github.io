@@ -97,7 +97,7 @@ navbar-toggler {
   background-color: #F9E421;
 }
 
-
+/* Small devices (phones)*/
 @media only screen and (max-width: 600px) {
   nav-bar {
     background-color: white;
@@ -113,6 +113,10 @@ navbar-toggler {
   .navbar-collapse {
     background-color: white !important;
   }
+  .fixed-top {
+    background-color: white;
+  }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up), such as 15 inch laptop*/
@@ -133,6 +137,7 @@ navbar-toggler {
     color: black !important;
     transition: background-color 200ms linear;
   }
+
   /* color of text in the nav bar changes after scrolling the page */
   .indexnav.scrolled {
     color:black !important;
