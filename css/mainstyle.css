@@ -97,6 +97,9 @@ navbar-toggler {
   background-color: #F9E421;
 }
 
+.navbar-collapse {
+  background-color: white !important;
+}
 
 @media only screen and (max-width: 600px) {
   nav-bar {
@@ -110,8 +113,6 @@ navbar-toggler {
     color: black !important;
     transition: background-color 200ms linear;
   } */
-  navbar-collapse {
-    background-color: white !important;
   }
 }
 
