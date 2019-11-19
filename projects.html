@@ -43,14 +43,19 @@
 		<!-- gallery of projects -->
 		<div class="parallax" id="projects" style="background-color:white;">
 				<div style="color: black; height:auto;position:relative; left:0;top:0;">
-				<div class="container" style="padding-top:100px;padding-bottom:0px;">
-						<h2 class="center" style="font-family: 'Montserrat', sans-serif; font-size: 64px;font-weight: 700;line-height: 1;text-transform: uppercase;letter-spacing: 0.035em;">Projects</h2>
+				<div class="container center" style="padding-top:100px;padding-bottom:0px;">
+						<h2 style="font-family: 'Montserrat', sans-serif; font-size: 64px;font-weight: 700;line-height: 1;text-transform: uppercase;letter-spacing: 0.035em;">Projects</h2>
 						<!-- <br><h4>Design Experiences, Design Learning, Design for Emotions.</h4> -->
-				</div>
+						Categories:
+						<button class="category" onclick="displayAll()">All</button>
+						<button class="category" onclick="displayCreativity()">Creativity</button>
+						<button class="category" onclick="displayEducation()">Education</button>
+						<button class="category" onclick="displayHealth()">Health</button>
+				</div><br>
 				<!-- content -->
 				<div class="container">
 					<div class="row" style="margin:auto;padding-bottom: 20px;">
-						<div class="col-md-4">
+						<div class="col-md-4 education">
 							<div class="wrap">
 								<div class="workcontainer">
 									<a href="backpack.html">
@@ -62,7 +67,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 education">
 							<div class="wrap">
 								<div class="workcontainer">
 									<a href="spatialplatform.html">
@@ -74,7 +79,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 education">
 							<div class="wrap">
 								<div class="workcontainer">
 									<a href="homeworldbound.html">
@@ -101,7 +106,7 @@
 								</div>
 							</div>
 						</div> -->
-						<div class="col-md-4">
+						<div class="col-md-4 health">
 							<div class="wrap">
 								<div class="workcontainer">
 									<a href="screentimegenie.html">
@@ -113,7 +118,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 creativity">
 							<div class="wrap">
 								<div class="workcontainer">
 									<a href="nartshell.html">
@@ -148,6 +153,64 @@ $(document).ready(function () {
 				$(".img-responsive").attr("src", image);
 		});
 });
+
+// change opacity of project blurbs based on category selection
+var projectClasses = document.querySelectorAll('.col-md-4'),
+		x = 0,
+		m = projectClasses.length;
+var creativityClasses = document.querySelectorAll('.creativity'),
+		i = 0,
+		l = creativityClasses.length;
+
+var educationClasses = document.querySelectorAll('.education'),
+		a = 0,
+		b = educationClasses.length;
+
+var healthClasses = document.querySelectorAll('.health'),
+		c = 0,
+		d = healthClasses.length;
+
+function displayAll() {
+		for (x=0; x < m; x++) {
+				projectClasses[x].style.opacity = '1';
+			}
+	}
+
+function displayCreativity() {
+		for (c=0; c < d; c++) {
+				healthClasses[c].style.opacity = '0.2';
+			}
+		for (a=0; a < b; a++) {
+			  educationClasses[a].style.opacity = '0.2';
+			}
+		for (i=0; i < l; i++) {
+				creativityClasses[i].style.opacity = '1';
+			}
+}
+
+function displayEducation() {
+		for (i=0; i < l; i++) {
+				creativityClasses[i].style.opacity = '0.2';
+			}
+		for (c=0; c < d; c++) {
+				healthClasses[c].style.opacity = '0.2';
+			}
+		for (a=0; a < b; a++) {
+			  educationClasses[a].style.opacity = '1';
+			}
+}
+
+function displayHealth() {
+		for (i=0; i < l; i++) {
+		    creativityClasses[i].style.opacity = '0.2';
+			}
+		for (a=0; a < b; a++) {
+			  educationClasses[a].style.opacity = '0.2';
+			}
+		for (c=0; c < d; c++) {
+				healthClasses[c].style.opacity = '1';
+			}
+}
 
 // nav bar change color on scroll
 // credit to https://stackoverflow.com/questions/23706003/changing-nav-bar-color-after-scrolling

@@ -85,6 +85,22 @@ navbar-toggler {
 /* Extra small devices (phones, 600px and down) */
 
 
+/* categories on projects page */
+.category {
+  border-color: black;
+}
+.category:hover {
+  background-color: #F9E421;
+  opacity: 0.9;
+  color: gray!important;
+  transition: 0.5s;
+}
+.category:focus {
+  background-color: #F9E421;
+  color: gray!important;
+
+}
+
 /* nav bar */
 .nav-link:hover {
   background-color: #F9E421;
