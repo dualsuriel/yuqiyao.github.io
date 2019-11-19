@@ -46,12 +46,16 @@
 				<div class="container center" style="padding-top:100px;padding-bottom:0px;">
 						<h2 style="font-family: 'Montserrat', sans-serif; font-size: 64px;font-weight: 700;line-height: 1;text-transform: uppercase;letter-spacing: 0.035em;">Projects</h2>
 						<!-- <br><h4>Design Experiences, Design Learning, Design for Emotions.</h4> -->
-						Categories:
+						Topics:
 						<button class="category" onclick="displayAll()">All</button>
-						<button class="category" onclick="displayCreativity()">Creativity</button>
+						<button class="category" onclick="displayCreativity()">Creativity/Art</button>
 						<button class="category" onclick="displayEducation()">Education</button>
 						<button class="category" onclick="displayHealth()">Health</button>
+						<!-- <p class="cmsg" style="display:none"> Unleash creativity and help explore the beauty of art history and everday life.</p>
+						<p class="emsg" style="display:none"> Improve learning experiences and learning outcomes with human-centered approach</p>
+						<p class="hmsg" style="display:none"> Mental well-being and physical health</p> -->
 				</div><br>
+
 				<!-- content -->
 				<div class="container">
 					<div class="row" style="margin:auto;padding-bottom: 20px;">
@@ -169,6 +173,12 @@ var educationClasses = document.querySelectorAll('.education'),
 var healthClasses = document.querySelectorAll('.health'),
 		c = 0,
 		d = healthClasses.length;
+// var cMsg = document.querySelectorAll('.cmsg'),
+// 		e = 0,
+// 		f = cMsg.length;
+// var cMsg = document.querySelectorAll('.emsg'),
+// 		g = 0,
+// 		h = eMsg.length;
 
 function displayAll() {
 		for (x=0; x < m; x++) {
@@ -177,6 +187,10 @@ function displayAll() {
 	}
 
 function displayCreativity() {
+		// for (e=0; e < f; e++) {
+		// 		cMsg[e].style.display = 'block';
+		// 	}
+		// document.getElementsByClassName('cmsg')[0].style.display = 'block';
 		for (c=0; c < d; c++) {
 				healthClasses[c].style.opacity = '0.2';
 			}
@@ -189,6 +203,10 @@ function displayCreativity() {
 }
 
 function displayEducation() {
+		// for (g=0; g < h; g++) {
+		// 		eMsg[g].style.display = 'block';
+		// 	}
+		// document.getElementsByClassName('emsg')[0].style.display = 'block';
 		for (i=0; i < l; i++) {
 				creativityClasses[i].style.opacity = '0.2';
 			}
@@ -201,6 +219,7 @@ function displayEducation() {
 }
 
 function displayHealth() {
+		// document.getElementsByClassName('hmsg')[0].style.display = 'block';
 		for (i=0; i < l; i++) {
 		    creativityClasses[i].style.opacity = '0.2';
 			}
