@@ -10,45 +10,58 @@
 		<link rel="icon" href="images/yuqi.ico" type="image/x-icon">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="" crossorigin="anonymous">
 		<!-- navbar -->
-		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="font-family:'Montserrat', sans-serif;font-size: 14px;
-    font-weight: 500;line-height: 1;letter-spacing: 0.05em;text-transform: uppercase; padding: 13px;">
+		<nav id="i-nav" class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="font-family:'Montserrat', sans-serif;font-size: 14px;
+		font-weight: 500;line-height: 1;letter-spacing: 0.05em;text-transform: uppercase; padding: 13px;">
 			<a class="i-brand navbar-brand" href="index.html"><img src="images/portrait_logo.png" style="width:80px; padding-left: 40%;"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 			<div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarText">
-		    <ul class="navbar-nav ml-auto">
-		      <li class="nav-item">
-		        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="about.html">About</a>
-		      </li>
-		      <li class="nav-item active">
-		        <a class="nav-link" href="index.html#projects">Projects</a>
-		      </li>
+				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-		        <a class="nav-link" href="art.html">Art</a>
-		      </li>
+						<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+					</li>
 					<li class="nav-item">
-		        <a class="nav-link" href="contact.html">Contact</a>
-		      </li>
-		    </ul>
-		  </div>
+						<a class="nav-link" href="about.html">About</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="projects.html">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="art.html">Art</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
 		</nav>
 	</head>
 
 	<body style="background-color:white; padding-top: 0px;">
 		<div class="wrapper" style="width: 50%; margin:auto;font-size: 18px">
+			<div class="side-bar separationLine">
+				<p>Table of Content</p>
+				<div style="text-transform: uppercase;">
+					<a href="#needfinding">01 Needfinding</a><br>
+					<a href="#concept">02 Concept</a><br>
+					<a href="#prototype">03 Prototype</a><br>
+					<a href="#nextstep">04 Next Step</a><br>
+				</div>
+			</div>
 			<div style="height:auto;position:relative; left:0;top:0;background-color:;">
 				<div class="container" style="padding-top:100px;">
-					<h1 class="center">NARTSHELL - COMING SOON</h1>
+					<h1 class="center">N<span style="color: orange">ART</span>SHELL</h1>
 					<p class="center">Unleash your inner artist</P>
 					<div class="row">
 						<!-- <div class="col-md-5" style="margin-right: 20px;">
 							<img src="images/backpack_screen1.png" width="40%" style="display: block;margin-left: auto;margin-right: auto;">
 						</div> -->
 						<div class="col-md-12" style="padding-top:30px;">
-							<p>Picasso once said "every child is an artist, the problem is how to remain an artist once he/she grows up". Although we celebrate the creativity that inspires art, and the artists who inspire creativity, much of art education today focuses on specific techniques rather than creativity itself. Nartshell, an exploratory web game, provides underserved students a safe space to flex and hone their creativity as artists. Students travel around in a virtual world of "nartshells" to interact with and learn from characters based on famous artists like Andy Warhol. Moving through progressively harder challenges, students unlock new paintbrushes and other visual effects tools to level up their art ability and creative confidence.</p>
+							<p>Picasso once said "every child is an artist, the problem is how to remain an artist once he/she grows up". Although we celebrate the creativity that inspires art, and the artists who inspire creativity, much of art education today focuses on specific techniques rather than creativity itself. <br>Nartshell, an exploratory web game, provides underserved students a safe space to flex and hone their creativity as artists. Students travel around in a virtual world of "nartshells" to interact with and learn from characters based on famous artists like Andy Warhol. Moving through progressively harder challenges, students unlock new paintbrushes and other visual effects tools to level up their art ability and creative confidence.</p>
+							<!-- <p> Nartshell is my final project during my time at <a href="ldt.html">Learning, Design and Technology</a>. When I first began exploring the topic of creativity, I almost immediately felt  -->
 							<!-- <p>Nartshell is the dream project that I've always been thinking, struggling about, and falling love with. my master's project </p> -->
-							<a href="http://www.nartshell.com/">Project Website</a> <br>(Loading may take a while at this moment, as I am currently rebuilding some of the modules)
+							<br><br><a href="http://www.nartshell.com/">Latest Prototype Website</a> <br>(Some modules may be partially functional at this moment, as I am currently rebuilding the game modules.)
 						</div>
 					</div>
 				</div>
@@ -74,31 +87,31 @@
 									</div>
 								</div>
 							</div>
+							<!-- <div class="center" style="margin-top: 100px ">
+								<a href="#needfinding">01 Needfinding</a><br>
+								<a href="#concept">02 Concept</a><br>
+								<a href="#prototype">03 Prototype</a><br>
+								<a href="#nextstep">04 Next Step</a><br>
+							</div> -->
 					</div>
-
-					<!-- <div style="margin-top: 100px">
-						<a class="circle" href="#needfinding">Needfinding</a>
-						<svg height="10" width="100">
-  <line x1="0" y1="0" x2="100" y2="0" style="stroke:rgb(231,169,71);stroke-width:2" /></svg>
-						<a class="circle" href="#concept">Concept</a>
-						<svg height="10" width="100">
-  <line x1="0" y1="0" x2="100" y2="0" style="stroke:rgb(231,169,71);stroke-width:2" /></svg>
-						<a class="circle" href="#prototype">Prototype</a>
-						<svg height="10" width="100">
-	<line x1="0" y1="0" x2="100" y2="0" style="stroke:rgb(231,169,71);stroke-width:2" /></svg>
-						<a class="circle" href="#nextstep">Coming Soon</a>
-					</div> -->
-
 					<div style="margin-top: 20px; position:relative; left:0;top:0;background-color: white;">
 						<div class="container" style="padding-top:80px;">
 								<div id="needfinding" class="center" style="margin-right: 10px;">
-									<b style="color: #004d45;"></b>
-									<h4></h4>
+									<b style="color: #004d45;">NEEDFINDING</b>
+									<h4>Challenge: The gap in the current art education</h4>
 									<p style="text-align: left;"> </p>
-									<!-- <img src="images/persona2.jpg" width="80%">
-									<img src="images/persona3.jpg" width="80%">
-									<img src="images/persona4.jpg" width="80%"> -->
-									<p style="text-align: left;"> </p>
+									<p style="text-align: left;">A common challenge in the development of creativity is that students perceive creativity as an innate personality and ability and do not believe in their own creative potential (Boden, 2004; Kelley & Kelley, 2013; Davies, 2000). Creativity is in demand in many fields, including art, business, and technology (Davies, 2000; Kelley & Kelley, 2013), yet our current education system provides insufficient support to the development of children’s creativity, due to limited teaching resources and a limited budget (Brooks, 2001; Spohn, 2008). Moreover, existing educational products do not consistently incorporate learning mechanics to discover children’s creative potential. Lastly, curriculums in school often move forward too fast without leaving children enough time to explore creativity (White, 2018) and cultivate an experimental attitude. <br> Seen together, these conditions limit students’ development in artistic creativity throughout their academic career.
+									</p>
+									<img src="images/issues.png" width="80%">
+									<p>Figure 1. Issues in the current education system </p>
+									<img src="images/challenge.png" width="60%">
+									<p>Figure 2. Challenge </p>
+									<p style="text-align: left;">There is a gap between what we teach and what we appreciate (see Figure 1). We celebrate great artists’ creativity, but often teach children rote techniques rather than encouraging them to be creative. <br>In order to investigate how students in different age groups perceived art, I asked kindergarten and middle school students to define art. While kindergarten students gave a diverse range of answers, middle school students emphasized more on the ability of drawing precisely  (see Figure 2). According to my interviews with art educators and local artists, though artists’ creativity often built upon sufficient techniques, artists’ creative confidence was the cornerstone in their process of creation. Studies show that support and feedback from teachers in traditional environments can help students build creative confidence (Davies, 2000), which may help students move beyond the concern of being imprecise, and eventually cultivate an experimental attitude (Hillis, 2018). Students identified the need for close, individual support and endorsement from teachers; when such support was absent, they felt negative about their creative achievement (Davies, 2000). It is possible to build these skills in schools, but it is time-intensive and requires support from teachers.
+									</p>
+									<img src="images/open_ended_question.png" width="80%">
+									<p>Figure 3. In response to an open-ended question “what is art?” : a comparison between kindergarten students and middle school students' answers.</p>
+									<p style="text-align: left;">Research indicates that art education not only promotes children’s creativity, but also improves students’ overall school performance and involvement in community service and pro-social activities (Catterall, 2009). Students who experience learning difficulty in school and come from low-income families benefit from art learning even more than privileged students (Catterall, 2009; White, 2018). The positive impact of art education lasts through adulthood. However, art classes and resources tend to be the first cut in schools with insufficient budget (White, 2018), especially in underserved communities. Thus, art education and its benefits are unequally distributed, perpetuating the opportunity gap.
+To address the challenges that we are facing in creative art education, I believe we can design a scalable, low-cost web learning tool that encourages students to explore visual art in a playful, safe space. </p>
 									<!--Bootstrap slider begin -->
 									<!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width:100%;padding:5%;">
 									  <ol class="carousel-indicators">
@@ -129,17 +142,14 @@
 									    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 									    <span class="sr-only">Next</span>
 									  </a>
-									</div>
+									</div> -->
 									<!-- slider end -->
-									<!-- <h4>Insights and Needs: Tackle challenges through a Strength-based Learning Approach</h4>
-									<img src="images/Insights_needs.png" width="80%"><br><br><br>
-									<h4>3 Main Take-Aways</h4>
-									<p style="text-align: left;"><span class="far fa-lightbulb" style="padding:4px;"></span>Dyslexic children struggle socially, academically, and psychologically in traditional classrooms</p>
-									<p style="text-align: left;"><span class="far fa-lightbulb" style="padding:4px;"></span>Project-based learning and gamification of learning allows students to feel invested in their work</p>
-									<p style="text-align: left;"><span class="far fa-lightbulb" style="padding:4px;"></span>Assistive technology (e.g., screen-reader, voice-to-text) can make learning easier if designed well</p>
+									<h4></h4>
+									<img src="images/.png" width="80%"><br><br><br>
+
 								</div>
 						</div>
-					</div> -->
+					</div>
 
 					<!-- <div id="concept" style="margin-top: 20px; height:auto;position:relative; left:0;top:0;">
 						<div class="container" style="padding-top:80px; padding-bottom: 20px; margin-left: auto;">
@@ -148,17 +158,20 @@
 									<b style="color: #004d45;">CONCEPT</b>
 									<h4></h4>
 									<p style="text-align: left"></p>
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/H51zXcQBudA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
 							</div>
 						</div>
 					</div> -->
 
-					<!-- <div id="prototype" class="center" style="margin-top: 20px; position:relative; left:0;top:0;background-color: white;">
+					<div id="prototype" class="center" style="margin-top: 20px; position:relative; left:0;top:0;background-color: white;">
 						<div class="container" style="padding-top:80px;">
 								<b style="color: #004d45;">PROTOTYPE</b>
-								<h4><span style="color: black">Low-Fi Prototype</h4>
-								<p style="text-align:left"></p> -->
+								<h4><span style="color: black">Iterations and Play-tests</h4>
+								<p style="text-align:left">This version of conceptual prototype was developed based on the time travel idea. Lately I have been thinking more about what artists and content to include in the game. As the game targets late elementary and middle school students, I tried to find artists whose works reflect the principles of visual elements and color theory. The French Artist Sonia Delaunay's colorful, geometric paintings can be a great starting point for someone with minimal experience in art.
+								Instruction and supplemental materials, including a set of markers, printed geometric shapes, and six decks of sticky notes in different colors were prepared for furture user testings.
+								<br>The six decks of sticky notes will be arranged in two rows, "time" and "country", as a fake mechanism of "time travel". The participant will be asked to choose one deck from each row, in order to determine the time period and country that the participant will travel to.
+								The participant will cut out shapes from the rinted geometric shapes to complete the task. </p>
+								<img src="images/revised_prototype.png" alt="platform" style="width:auto;max-width:100%;padding:10px;" />
 									<!--Bootstrap slider begin -->
 								<!-- <div id="carousel2" class="carousel slide" data-ride="carousel" style="width:100%;padding:5%;">
 										<ol class="carousel-indicators">
@@ -191,20 +204,51 @@
 										</a>
 								</div> -->
 								<!-- slider end -->
-								<!-- <h4><span style="color: black">Mid-Fi Prototype</h4>
-									<p style="text-align:left"></p>
-									<iframe src="https://marvelapp.com/1ag9hd3g?emb=1&iosapp=false&frameless=false" width="358" height="700" allowTransparency="true" frameborder="0"></iframe>
-								<p></p>
+								<h4><span style="color: black">Mid-Fi Prototypes</h4>
+									<p style="text-align:left">Instead of letting players draw within a frame, I decided to remove the frame so that users can draw more freely (and more immersively). I also reframed the narrative of the challenge prompt to emphasize on helping the artist, and using creativity to take the challenge.
+										Rather than giving purely positive feedback like "well done", the virtual artist (aka the game version Warhol) provided a slightly critical feedback and suggested players to try the next level of challenge for improvement.
+									Players will have the option to challenge a more advanced module in future. <br>I have not build the next level yet; the idea was to get students experience a little frustration and chaos in the first level, and encourage them to become mindful at creating patterns out of visual elements in the second level.</p>
+									<iframe width="972" height="720" src="https://invis.io/F5RR3WB2UN6" frameborder="0" allowfullscreen></iframe>
+									<p>I kept thinking about changing the concept of traveling on a world map to traveling in different time periods and cities. Because I did not feel strong about the mechanics of viewing multiple artists from different time periods in one city gallery. Children might become confused about the time periods and cultural contexts when they see artists mixing up in the gallery.
+										Below is a sketch of the new idea - having players as time travelers.
+									<img src="images/revised_prototype.JPG" alt="platform" style="width:auto;max-width:100%;padding:10px;" />
+									<img src="images/.JPG" alt="platform" style="width:auto;max-width:100%;padding:10px;" />
 						</div>
 					</div>
 
 					<div class="center" style="margin-top: 20px; height:auto;position:relative; left:0;top:0;">
-						<div class="container" style="padding-top:80px; padding-bottom: 20px; argin-left: auto;">
+						<div class="container" style="padding-top:80px; padding-bottom: 20px; margin-left: auto;">
 								<p style="color: #004d45;">FUTURE DIRECTION</p>
 								<h4><span style="color: black">My Next Step</h4>
 								<p></p>
 						</div>
-					</div> -->
+					</div>
+
+					<div style="margin-top: 20px; height:auto;position:relative; left:0;top:0;">
+						<div class="container center" style="padding-top:80px; padding-bottom: 20px; margin-left: auto;">
+							<b style="color: #004d45;">REFERENCES</b>
+							<p style="text-align: left">Amabile, T. M. (1982). Social psychology of creativity: A consensual assessment technique. Journal of Personality and Social Psychology, 43(5), 997-1013. Retrieved from http://dx.doi.org/10.1037/0022-3514.43.5.997.<br>
+Barata, G., Gama, S., Fonseca, M. J., & Gonçalves, D. (2013). Improving student creativity with gamification and virtual worlds. In Proceedings of the First International Conference on Gameful Design, Research, and Applications(pp. 95-98). ACM.<br>
+Boden, M. A. (2004). The creative mind: Myths and mechanisms. Routledge.<br>
+Brooks, A. C. (2001). Who opposes government arts funding?. Public Choice, 108(3-4), 355-367.<br>
+Catterall, James S. (2009). Doing well and doing good by doing art: The effects of education in the visual and performing arts on the achievements and values of young adults. Los Angeles/London: Imagination Group/I-Group Books.<br>
+Chen, C., Kasof, J., Himsel, A. J., Greenberger, E., Dong, Q., & Xue, G. (2002). Creativity in drawings of geometric shapes: A cross-cultural examination with the consensual assessment technique. Journal of Cross-Cultural Psychology, 33(2), 171-187.<br>
+Cutumisu, M., Blair, K. P., Chin, D. B., & Schwartz, D. L. (2015). Posterlet: A game-based assessment of children's choices to seek feedback and to revise. Journal of Learning Analytics, 2(1), 49-71.<br>
+Davies, T. (2000). Confidence! Its role in the creative teaching and learning of design and technology. Volume 12 Issue 1 (fall 2000).<br>
+Eisenberger, R., Armeli, S., & Pretz, J. (1998). Can the promise of reward increase creativity? Journal of Personality and Social Psychology, 74(3), 704-714. doi:10.1037/0022-3514.74.3.704<br>
+Eisner, E. W. (2002). The arts and the creation of mind. Yale University Press.<br>
+Erhel, S., & Jamet, E. (2013). Digital game-based learning: Impact of instructions and feedback on motivation and learning effectiveness. Computers & Education, 67, 156-167.<br>
+Gardner, H., & Davis, K. (2013). The app generation: How today's youth navigate identity, intimacy, and imagination in a digital world. Yale University Press.<br>
+Hillis, N. (2018). The artist's journey: Bold strokes to spark creativity.<br>
+Kelley, T., & Kelley, D. (2013). Creative confidence: Unleashing the creative potential within us all. Currency.<br>
+Rowsell, J., Morrell, E., & Alvermann, D. E. (2017). Confronting the digital divide: Debunking brave new world discourses. The Reading Teacher, 71(2), 157-165.<br>
+Schunk, D. H. (2003). Self-efficacy for reading and writing: Influence of modeling, goal setting, and self-evaluation. Reading &Writing Quarterly, 19(2), 159-172.<br>
+Spohn, C. (2008). Teacher perspectives on No Child Left Behind and arts education: A case study. Arts Education Policy Review, 109(4), 3-12.<br>
+White, Katie. (2018) Unlocked: Assessment As the Key to Everyday Creativity in the Classroom. Bloomington, IN: Solution Tree Press.<br>
+Zimmerman, B. J. (2000). Self-efficacy: An essential motive to learn. Contemporary educational psychology, 25(1), 82-91.<br>
+					</div>
+				</div>
+
 
 			 </div>
 			 <!-- /content -->
