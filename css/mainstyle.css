@@ -37,12 +37,10 @@
   }
   /* table of content fixed on the left of each project page */
   .side-bar {
-    /* padding-top:100px;
-    padding-left: 10px; */
-  	/* position:fixed; */
-  	width:200px;
+  	/* width:200px;
   	left:10px;
-  	background-color: white;
+  	background-color: white; */
+    display: none;
   }
 }
 
